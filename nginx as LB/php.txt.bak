@@ -1,0 +1,12 @@
+#command to run php file
+nohup php -S localhost:10001 s1 2>&1 &
+nohup php -S localhost:10002 s2 2>&1 &
+nohup php -S localhost:10003 s3 2>&1 &
+
+#Test the PHP
+curl http://localhost:10001/
+
+
+#command to run in loop
+while sleep 1; do curl http://localhost:8888/lb; done
+while sleep 1; do curl http://localhost:8888/php_server1; done

@@ -1,0 +1,63 @@
+ssh-keygen -R ip
+	
+yum install epel-release
+
+nginx -h
+nginx -V
+nginx -s stop
+
+systemd
+systemctl start nginx
+
+systemctl enable nginx
+
+context can be set for give context also called scope
+directive having name and value
+
+
+http context - anything http related
+server context - define virtual host
+location context - fr matching uri for incoming req	
+
+NGINX Download - https://www.nginx.com/en/download.html
+
+creating virtualhost
+systemctl reload nginx
+systemctl restart nginx
+
+you can install the same packages by running 
+yum group install Development Tools
+yum install pcre pcre-devel zlib zlib-devel openssl openssl-devel
+./configure --sbin-path=/usr/bin/nginx --conf-path=/etc/nginx/nginx/conf --error-log-path=/var/log/nginx/error.log --http-log-path=/var/log/access.log --with-pcre --pid-path=/var/run/nginx.pid --with-http_ssl_module
+make
+make install
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+quaf7Ubamo
+
+
